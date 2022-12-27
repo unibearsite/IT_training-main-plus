@@ -1,0 +1,42 @@
+/* Fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+
+/* fontawesome */
+
+@import url(https://weloveiconfonts.com/api/?family=fontawesome);
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+}
+
+@mixin sp {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+// Body
+body {
+    display: none;
+}
+
+.bg-sub1 {
+    background-color: $sub-color1;
+}
+
+.bg-sub2 {
+    background-color: $sub-color2;
+    color: $sub-color3 !important;
+}
+
+.bg-sub3 {
+    background-color: $sub-color3;
+}
+
+.bg-key {
+    background-color: $key-color1;
+}
+
+.bg-key2 {
+    background-color: $key-color2;
+}

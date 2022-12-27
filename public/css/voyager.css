@@ -1,0 +1,90 @@
+html {
+    font-size: 62.5%!important;
+}
+
+.advance-container {
+    width: 95%;
+    margin-left: 3%;
+}
+
+.advance-title {
+    width: 100%;
+    font-size: 2.3rem;
+}
+
+.advance-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 1.5rem;
+}
+
+table th:first-child {
+    border-radius: 5px 0 0 0;
+}
+
+table th:last-child {
+    border-radius: 0 5px 0 0;
+    border-right: 1px solid #3c6690;
+}
+
+table th {
+    text-align: center;
+    color: white;
+    background: linear-gradient(#829ebc, #225588);
+    border-left: 1px solid #3c6690;
+    border-top: 1px solid #3c6690;
+    border-bottom: 1px solid #3c6690;
+    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+    padding: .5 1rem;
+}
+
+table td {
+    text-align: center;
+    border-left: 1px solid #a8b7c5;
+    border-bottom: 1px solid #a8b7c5;
+    border-top: none;
+    box-shadow: 0px -3px 5px 1px #eee inset;
+    padding: .5rem 1rem;
+}
+
+table th:first-child {
+    width: 14%;
+}
+
+table td:last-child {
+    border-right: 1px solid #a8b7c5;
+}
+
+table td:first-child {
+    width: 14%;
+}
+
+table tr:last-child td:first-child {
+    border-radius: 0 0 0 5px;
+}
+
+table tr:last-child td:last-child {
+    border-radius: 0 0 5px 0;
+}
+
+.bread-actions {
+    display: flex;
+}
+
+.delete,
+.edit,
+.view {
+    margin: .7rem 0 .7rem .5rem;
+    /* margin-left: .5rem; */
+}
+
+.modal_confirm {
+    display: flex;
+    /* margin: 0; */
+    align-items: center;
+}
+
+#delete_form {
+    margin-top: 2rem;
+}

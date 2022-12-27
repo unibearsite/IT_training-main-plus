@@ -1,0 +1,169 @@
+/* Simple Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    max-height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    max-height: 100%;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    line-height: 1.5;
+    letter-spacing: .04em;
+    background: $sub-color1;
+    color: $sub-color3;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+// テキストに使うため
+h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+i {
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+// フラッシュメッセージ
+.flash-success {
+    display: flex;
+    color: $base-color;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgba($key-color1, .8);
+    padding: 1.5rem 0;
+    justify-content: center;
+    border-radius: .5rem;
+    width: 90%;
+    @include sp {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.6rem;
+    }
+}
+
+.flash_error {
+    display: flex;
+    color: $base-color;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgba(#F98B8B, .8);
+    padding: 1.5rem 0 2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    width: 90%;
+    @include sp {
+        width: 100%;
+        padding: 1rem 0;
+        font-size: 1.6rem;
+    }
+}
+
+.home-btn {
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    color: $sub-color1;
+    padding: 1rem 1.5rem;
+    background-color: $key-color1;
+}
+
+.error-container {
+    background-color: $color-white;
+    border-radius: .5rem;
+    padding: 2.5rem 2rem;
+    box-shadow: 1px 1px 2px rgba($sub-color3, .1);
+    margin-bottom: 30rem;
+    p {
+        line-height: 1.5;
+    }
+    a:hover {
+        opacity: .8;
+        color: $color-white;
+    }
+}
+
+// 個postでの文章作成に使う
+.red {
+    color: #CC0000;
+}
+
+.bold {
+    font-weight: bold!important;
+}
+
+.center {
+    text-align: center;
+}
+
+.icon {
+    width: 100%;
+    max-width: 10rem!important;
+    height: 100%;
+    max-height: 11rem!important;
+}
+
+.app-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    @include sp {
+        display: block;
+    }
+}
+
+.main-wrapper {
+    width: 75%;
+    @include sp {
+        width: 95%;
+        margin: 1.6rem auto 0;
+    }
+}
+
+.sp-page {
+    display: none;
+    @include sp {
+        display: block;
+    }
+}

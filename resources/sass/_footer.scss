@@ -1,0 +1,109 @@
+#footer {
+    width: 100%;
+    bottom: 0;
+    position: relative;
+}
+
+.footer-wrap {
+    padding: 0 8rem;
+    margin-top: 5rem;
+    @include sp {
+        padding: 0;
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+.footer-container {
+    padding: 5rem 0;
+    border-top: 1px solid $sub-color2;
+    color: $color_gray;
+    @include sp {
+        padding: 2rem 0;
+    }
+    .footer-menu {
+        display: flex;
+        justify-content: center;
+        @include sp {
+            width: 100%;
+        }
+    }
+    .footer-companyname {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.footer-navi {
+    display: flex;
+    margin-bottom: 5rem;
+    @include sp {
+        display: block;
+        margin-bottom: 1.6rem;
+    }
+    li {
+        margin-right: 2rem;
+        @include sp {
+            text-align: center;
+            line-height: 1;
+            margin-right: 0;
+            margin-bottom: .8rem;
+        }
+        a {
+            color: $color_gray;
+            @include sp {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    li:last-child {
+        margin-right: 2rem;
+        @include sp {
+            margin-right: 0;
+        }
+    }
+}
+
+// ********** トップボタン ***********
+#topBtn {
+    position: fixed;
+    right: 6%;
+    bottom: 6%; //ボタンの高さ
+    padding: 3.5rem;
+    width: 5rem;
+    height: 5rem;
+    z-index: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background: $key-color1;
+    border-radius: 50%;
+    cursor: pointer;
+    @include sp {
+        padding: 2.4rem;
+        right: 0;
+        bottom: 3%; //ボタンの高さ
+        left: 30rem;
+    }
+    p {
+        text-align: center;
+        color: $sub-color1;
+        i {
+            font-size: 5rem;
+            @include sp {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+#topBtn:hover {
+    opacity: .8;
+}
+
+.copy-light {
+    color: $color_gray;
+    text-align: center;
+}

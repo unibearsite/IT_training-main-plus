@@ -1,0 +1,307 @@
+header {
+    position: relative;
+    width: 100%;
+    // background-color: $color-white;
+}
+
+// *********************************************** 
+// ログイン画面のヘッダー
+.login-menu {
+    background-color: $key-color1;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    margin-right: 5rem;
+    a {
+        color: $sub-color1!important;
+        font-weight: bold;
+    }
+}
+
+.login-menu:last-child {
+    margin-right: 0;
+}
+
+// *********************************************** 
+// 波
+.header_wave {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 22rem;
+    background-color: $sub-color1;
+    @include sp {
+        display: none;
+    }
+}
+
+.header-wrap {
+    width: 100%;
+}
+
+.header-container {
+    width: 100%;
+    padding: 0 5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include sp {
+        padding: 0 1rem 1rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+    a {
+        @include sp {
+            width: 40%;
+        }
+    }
+    .right-header {
+        display: flex;
+        align-items: center;
+        @include sp {
+            width: 65%;
+        }
+    }
+    .course-container {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        @include sp {
+            width: auto;
+            display: block;
+        }
+    }
+}
+
+.header-menu-container {
+    background-color: $key-color1;
+    padding: 1rem 0;
+    margin-bottom: 6rem;
+    @include sp {
+        margin-bottom: 6rem;
+        padding: 0;
+    }
+}
+
+.header-inner-container {
+    width: 100%;
+}
+
+.app-title {
+    font-family: 'Londrina Shadow', cursive;
+    font-weight: 300;
+    font-size: 4rem;
+    text-align: left;
+    padding-left: 3.5rem;
+    color: $key-color1;
+}
+
+.app-logo {
+    width: 12rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid $sub-color3;
+    background-color: $color-white;
+    @include sp {
+        width: 8rem;
+        border: 1px solid $color-gray;
+    }
+}
+
+.select-course {
+    height: 100%;
+    padding: 0;
+    margin-right: 1.5rem;
+    @include sp {
+        margin-right: 0;
+    }
+}
+
+// ヘッダーセレクトボックスデザイン
+.custom-select-trigger {
+    width: 100%;
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: 1.2rem 1rem;
+    font-weight: 300;
+    border-color: $sub-color2;
+    cursor: pointer;
+    border-radius: .5rem;
+    @include sp {
+        width: 90%;
+        padding: .5rem .8rem;
+        margin: 0 auto;
+    }
+}
+
+.switch-btn {
+    padding: 1rem 1.6rem;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    text-shadow: 1px 1px 2px $color-gray;
+    @include sp {
+        width: 40%;
+        padding: 0.4rem 0.5rem;
+    }
+}
+
+.switch-btn:hover {
+    background-color: $key-color2;
+}
+
+.header-list {
+    // position: absolute;
+    // z-index: 10;
+    // top: 30%;
+    right: 0;
+    @include sp {
+        position: relative;
+        top: 0;
+        background-color: $key-color1;
+    }
+    ul {
+        display: flex;
+        justify-content: right;
+        @include sp {
+            padding: 0;
+            justify-content: space-between;
+        }
+    }
+    li {
+        padding: 1rem 1.6rem;
+        @include sp {
+            padding: 1rem .6rem;
+        }
+    }
+    li:last-child {
+        @include sp {
+            margin-right: 0;
+        }
+    }
+    li:hover {
+        background-color: $key-color2;
+        border-radius: 1rem;
+    }
+}
+
+.header-course {
+    form {
+        padding: 0;
+    }
+}
+
+.header-group {
+    margin-right: 2rem;
+    @include sp {
+        margin-right: .5rem;
+    }
+    a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+            margin-top: .5rem;
+            color: $sub-color1;
+        }
+    }
+}
+
+.header-group:last-child {
+    margin-right: 5rem;
+}
+
+.header-group:hover {
+    text-shadow: 1px 1px 2px $color-gray;
+    i:hover {
+        position: relative;
+        font-size: 2.8rem;
+        top: -.5rem;
+        margin-bottom: -.5rem;
+        @include sp {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.part-border {
+    border-right: 1px solid $key-color1;
+    height: 3rem;
+    position: relative;
+    top: 8.5rem;
+    left: 30%;
+}
+
+.link-icon {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    // margin-top: 2rem;
+    @include sp {}
+    i {
+        color: $color-white;
+        font-size: 2.4rem;
+        font-style: normal;
+        @include sp {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.nav-link {
+    @include sp {
+        width: 100%!important;
+    }
+}
+
+.header-link {
+    p {
+        @include sp {
+            font-size: .8rem;
+            font-weight: bold;
+            text-align: center;
+            white-space: nowrap;
+        }
+    }
+}
+
+// 検索画面
+.search-wrap {
+    margin-left: 40%;
+}
+
+.search_container {
+    background-color: #fff;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0.5rem 4rem 0.5rem 1rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    border: 1px solid $sub-color2;
+}
+
+.search_container input[type="text"] {
+    border: none;
+    height: 2.0em;
+    width: 24rem;
+}
+
+.search_container input[type="text"]:focus {
+    outline: 0;
+}
+
+.search_container input[type="submit"] {
+    cursor: pointer;
+    font-family: FontAwesome;
+    border: none;
+    background: $key-color1;
+    color: #fff;
+    position: absolute;
+    width: 4.2rem;
+    height: 100%;
+    right: 0;
+    top: 0;
+    outline: none;
+}

@@ -1,0 +1,231 @@
+.sidebar {
+    width: 25%;
+    padding-right: 5rem;
+    margin-top: 5rem;
+    @include sp {
+        padding: 1.5rem 0;
+        width: 100%;
+        padding: 0;
+        margin-top: 4rem;
+    }
+}
+
+.side-container {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 2rem;
+    right: 0;
+    @include sp {
+        position: static;
+        padding: 0 1rem;
+    }
+}
+
+.caption-container {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 28rem;
+    right: 0;
+    margin-bottom: 0;
+    z-index: 1;
+    @include sp {
+        position: static;
+        margin-top: 1.6rem;
+        padding: 0 1rem;
+    }
+}
+
+.animal-img {
+    position: relative;
+    display: flex;
+    width: 100%;
+    // margin-bottom: 5%;
+    @include sp {
+        width: 90%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .animal-img-container {
+        width: 50%;
+        img {
+            width: 100%;
+            max-width: 16rem;
+            object-fit: cover;
+            mix-blend-mode: darken;
+            @include sp {
+                width: 100%;
+                height: 12rem;
+                position: relative;
+                object-fit: scale-down;
+            }
+        }
+    }
+    .balloon3-right-btm {
+        width: 50%;
+        position: relative;
+        top: -3rem;
+        display: flex;
+        align-items: center;
+        max-width: 16rem;
+        max-height: 16rem;
+        padding: 2.4rem 0.5rem;
+        text-align: center;
+        font-weight: bold;
+        color: $sub-color3;
+        text-shadow: 1px 1px 0 rgba($sub-color3, .6);
+        background: $ballon;
+        border-radius: 50%;
+        box-sizing: border-box;
+        white-space: pre-line;
+        word-wrap: break-word;
+        @include sp {
+            width: 12rem;
+            height: 12rem;
+            left: 0%;
+        }
+        p {
+            padding: 0 .5rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin: auto 0;
+            color: $color-white;
+            @include sp {
+                padding: 0rem .5rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .balloon3-right-btm:before {
+        content: "";
+        position: absolute;
+        bottom: 1rem;
+        left: .8rem;
+        margin-top: -15px;
+        border: 15px solid transparent;
+        border-left: 15px solid $ballon;
+        z-index: -1;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(30deg);
+    }
+}
+
+.side-menu {
+    background-color: $color-white;
+    box-shadow: 1px 1px 3px rgba($sub-color3, .2);
+    padding: 2rem 3rem;
+    border-radius: .5rem;
+    @include sp {
+        padding: 1.6rem;
+    }
+}
+
+.side-navi {
+    width: 100%;
+    margin-top: 0!important;
+    li {
+        padding-left: 2rem;
+        margin-bottom: 1.6rem;
+        @include sp {
+            padding-left: 0;
+            margin-bottom: .8rem!important;
+        }
+        p {
+            color: $sub-color3;
+            font-size: 2rem;
+            @include sp {
+                font-size: 1.6rem;
+                text-align: center;
+            }
+        }
+        a {
+            font-size: 1.8rem;
+            color: $sub-color3;
+            border-radius: 1rem;
+            padding: 0.8rem;
+            @include sp {
+                display: block;
+                text-align: center;
+                font-size: 1.2rem;
+            }
+        }
+        a:hover {
+            box-shadow: 0px 0px 8px 3px rgba($sub-color2, 1) inset;
+        }
+    }
+    li:last-child {
+        margin-bottom: 0!important;
+    }
+}
+
+.caption-navi {
+    width: 100%;
+    margin-top: 0!important;
+    .caption-li {
+        box-sizing: border-box;
+        margin-bottom: 1.5rem;
+        @include sp {
+            margin-bottom: .5rem;
+        }
+        .caption_h2 {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: $link;
+        }
+        .caption_h3 {
+            padding-left: .5rem;
+            font-size: 1.4rem;
+            font-weight: 200;
+            color: $link;
+            @include sp {
+                padding-left: 0;
+            }
+        }
+        a {
+            font-size: 1.8rem;
+            color: $sub-color3;
+            @include sp {
+                display: block;
+                text-align: center;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+// ドロップダウンのメニュー固定
+.menu-position {
+    left: 0;
+    right: auto;
+    &::before {
+        right: auto !important;
+        left: 9px;
+    }
+    &::after {
+        right: auto !important;
+        left: 10px;
+    }
+    li {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+.caption-title {
+    text-align: center;
+    background-color: rgba($color-gray, .1);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-bottom: 3rem;
+    @include sp {
+        font-size: 1.6rem;
+        padding: .6rem;
+        margin-bottom: 1.6rem;
+    }
+}
+
+.progress {
+    width: 80%;
+    height: 2rem;
+}

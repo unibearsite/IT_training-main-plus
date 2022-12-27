@@ -1,0 +1,350 @@
+/* Form Layout */
+
+.login-wrapper {
+    padding: 2.5rem 5rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    @include sp {
+        padding: 1.2rem 2rem;
+    }
+}
+
+.login-header-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    @include sp {
+        margin-right: .5rem;
+    }
+    a {
+        color: $color-gray;
+    }
+    a:hover {
+        color: $sub-color3;
+    }
+    a:first-child {
+        margin-right: 7rem;
+        @include sp {
+            margin-right: 2.4rem;
+        }
+    }
+}
+
+.login-main-wrapper {
+    margin: 2.5rem 0;
+    padding: 4rem 6rem;
+    background-color: $key-color1;
+    border-radius: 2rem;
+    @include sp {
+        margin: 1.2rem 0;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+    .login-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        @include sp {
+            display: block;
+        }
+        .login-left-container {
+            width: 50%;
+            @include sp {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+            .logo-container {
+                margin-bottom: 3.6rem;
+                @include sp {
+                    margin-bottom: 1.8rem;
+                }
+            }
+            .catch-copy-container {
+                margin-top: 12rem;
+                @include sp {
+                    margin-top: 5rem;
+                }
+            }
+            h1 {
+                font-size: 4.2rem;
+                color: $color-white;
+                font-weight: bold;
+                margin-bottom: 3.6rem;
+                text-shadow: 1px 1px 2px $color-gray;
+                @include sp {
+                    font-size: 2.4rem;
+                    margin-bottom: 1.6rem;
+                }
+            }
+            h2 {
+                font-size: 3.6rem;
+                color: $color-white;
+                line-height: 1.5;
+                text-shadow: 1px 1px 2px $color-gray;
+                @include sp {
+                    font-size: 1.8rem;
+                }
+                span {
+                    font-size: 4.2rem;
+                    @include sp {
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+        }
+        .login-right-container {
+            width: 50%;
+            @include sp {
+                width: 100%;
+                margin-top: 5rem;
+            }
+            .form-wrapper {
+                max-width: 60rem;
+                padding: 8rem 6rem;
+                margin-left: auto;
+                background-color: $color-white;
+                border-radius: 1rem;
+                margin-right: auto;
+                @include sp {
+                    padding: 4rem 2.4rem;
+                }
+                .form-item {
+                    margin-bottom: 4.8rem;
+                    label {
+                        font-size: 1.6rem;
+                        color: $color-gray;
+                        margin-bottom: 1.4rem;
+                        @include sp {
+                            margin-bottom: .8rem;
+                        }
+                    }
+                    input {
+                        background-color: #F7FCFD;
+                        width: 100%;
+                        height: 4.6rem;
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        border-bottom: 1px solid $color-gray;
+                    }
+                }
+                .check-container {
+                    display: flex;
+                    justify-content: center;
+                }
+                .button-panel {
+                    display: flex;
+                    justify-content: center;
+                    margin: 6.8rem auto 0;
+                    input {
+                        background-color: $key-color1;
+                        padding: 1.2rem 6rem;
+                        font-size: 2rem;
+                        color: $color-white;
+                        font-weight: bold;
+                        border: none;
+                        border-radius: .5rem;
+                        text-shadow: 1px 1px 2px $color-gray;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.login-footer-container {
+    .copy-light {
+        margin-left: 2rem;
+        text-align: left;
+        @include sp {
+            text-align: center;
+        }
+        small {
+            font-size: 1.4rem;
+            @include sp {
+                font-size: 1.2rem;
+                margin-left: .5rem;
+            }
+        }
+    }
+}
+
+// ===== シャボン玉 =====
+.soap_wrap {
+    position: absolute;
+    height: 260px;
+    /*お好みで*/
+    .soap {
+        position: absolute;
+        overflow: hidden;
+        background: radial-gradient(at 46% 54%, transparent 50%, rgba(2, 172, 253, 0.3) 70%, transparent 100%) 50% 50% no-repeat;
+        z-index: 1;
+    }
+    .soap1 {
+        animation: soap 20s 0s ease-in-out infinite;
+        left: 36rem;
+        /*お好みで*/
+        top: -5%;
+        /*お好みで*/
+        width: 200px;
+        /*お好みで*/
+        height: 200px;
+        /*お好みで*/
+        border-radius: 50% 46% 48% 44%;
+        @include sp {
+            top: 0%;
+            left: 20rem;
+            width: 150px;
+            /*お好みで*/
+            height: 150px;
+        }
+        .soap-img {
+            position: relative;
+            left: 2rem;
+            top: 3rem;
+            width: 150px;
+            height: 150px;
+            mix-blend-mode: darken;
+            opacity: .7;
+            @include sp {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+    .soap2 {
+        animation: soap 14s 0s ease-in-out infinite;
+        left: 15rem;
+        /*お好みで*/
+        top: 0%;
+        /*お好みで*/
+        width: 120px;
+        /*お好みで*/
+        height: 120px;
+        /*お好みで*/
+        border-radius: 50% 46% 48% 44%;
+        @include sp {
+            left: 7rem;
+            width: 90px;
+            /*お好みで*/
+            height: 90px;
+        }
+    }
+    .soap3 {
+        animation: soap 16s 0s ease-in-out infinite;
+        left: 3rem;
+        /*お好みで*/
+        top: 25%;
+        /*お好みで*/
+        width: 90px;
+        /*お好みで*/
+        height: 90px;
+        /*お好みで*/
+        border-radius: 50% 46% 48% 44%;
+        @include sp {
+            left: 0;
+            top: 10%;
+            width: 60px;
+            /*お好みで*/
+            height: 60px;
+        }
+    }
+    .soap4 {
+        animation: soap 10s 0s ease-in-out infinite;
+        left: 30rem;
+        /*お好みで*/
+        top: 40%;
+        /*お好みで*/
+        width: 40px;
+        /*お好みで*/
+        height: 40px;
+        /*お好みで*/
+        border-radius: 50% 46% 48% 44%;
+        @include sp {
+            left: 16rem;
+            width: 40px;
+            /*お好みで*/
+            height: 40px;
+        }
+    }
+}
+
+.soap::before {
+    content: "";
+    position: absolute;
+    right: -10%;
+    bottom: -10%;
+    width: 60%;
+    height: 60%;
+    border-radius: 60% 0;
+    background: radial-gradient(at 0 0, rgba(0, 130, 255, 0.3) 40%, rgba(255, 154, 204, 0.7) 50%);
+    transform-origin: 0 0;
+    animation: soap_rotate 15s 0s ease-in-out infinite;
+    filter: blur(15px);
+}
+
+.soap::after {
+    content: "";
+    position: absolute;
+    left: -10%;
+    top: -10%;
+    width: 60%;
+    height: 60%;
+    border-radius: 20% 0;
+    background: radial-gradient(at 100% 100%, rgba(255, 255, 100, 0.5) 40%, rgba(120, 255, 140, 0.7) 60%);
+    transform-origin: 100% 100%;
+    animation: soap_rotate 8s 0s ease-in-out infinite;
+    filter: blur(15px);
+}
+
+@keyframes soap_rotate {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(160deg);
+    }
+}
+
+
+/*上下に移動 お好みで*/
+
+@keyframes soap {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    // 10% {
+    //     opacity: 1;
+    //     transform: translateY(80%);
+    // }
+    20% {
+        opacity: .8;
+        animation-delay: 0.8s;
+        transform: translateY(0%);
+    }
+    40% {
+        opacity: 1;
+        transform: translateY(-20%);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(20%);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(-80%);
+    }
+    100% {
+        opacity: .9;
+        transform: translateY(-160%);
+    }
+}
+
+.delay-time04 {
+    animation-delay: 0.4s;
+}
+
+.delay-time06 {
+    animation-delay: 0.6s;
+}
